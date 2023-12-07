@@ -1,5 +1,7 @@
 # Microsoft Entra ID MudBlazor
 
+[![.NET](https://github.com/damienbod/MicrosoftEntraIDMudBlazor/actions/workflows/dotnet.yml/badge.svg)](https://github.com/damienbod/MicrosoftEntraIDMudBlazor/actions/workflows/dotnet.yml)
+
 ## Links
 
 https://mudblazor.com/
