@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Client\MicrosoftEntraIdMudBlazor.Client.csproj" />
+		<ProjectReference Include="..\Shared\MicrosoftEntraIdMudBlazor.Shared.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="8.0.0" NoWarn="NU1605" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Identity.Web.GraphServiceClient" Version="2.16.0" />
+		<PackageReference Include="Microsoft.Identity.Web" Version="2.16.0" />
+		<PackageReference Include="Microsoft.Identity.Web.UI" Version="2.16.0" />
+		<PackageReference Include="NetEscapades.AspNetCore.SecurityHeaders" Version="0.21.0" />
+	</ItemGroup>
+
+</Project>
