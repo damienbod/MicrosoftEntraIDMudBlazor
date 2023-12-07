@@ -2,29 +2,25 @@
 @inject IAntiforgeryHttpClientFactory httpClientFactory
 @inject IJSRuntime JSRuntime
 
-<h1>Data from Direct API</h1>
+<MudText Typo="Typo.h3" GutterBottom="true">Data from Direct API</MudText>
 
 @if (apiData == null)
 {
-    <p><em>Loading...</em></p>
+    <MudProgressCircular Color="Color.Default" Indeterminate="true" />
 }
 else
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Data</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var data in apiData)
-            {
-                <tr>
-                    <td>@data</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <MudTable Items="apiData" Hover="true" SortLabel="Sort By" Elevation="0">
+        <HeaderContent>
+            <MudTh>Data</MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd DataLabel="Data">@context</MudTd>
+        </RowTemplate>
+        <PagerContent>
+            <MudTablePager PageSizeOptions="new int[]{50, 100}" />
+        </PagerContent>
+    </MudTable>
 }
 
 @code {
