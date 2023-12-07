@@ -22,10 +22,11 @@ public static class SecurityHeadersDefinitions
                 builder.AddBlockAllMixedContent();
                 builder.AddImgSrc().Self().From("data:");
                 builder.AddFormAction().Self().From(idpHost);
-                builder.AddFontSrc().Self();
-                builder.AddStyleSrc().Self();
+                builder.AddFontSrc().Self();        
                 builder.AddBaseUri().Self();
                 builder.AddFrameAncestors().None();
+
+                builder.AddStyleSrc().UnsafeInline().Self();
 
                 // due to Blazor
                 builder.AddScriptSrc()
