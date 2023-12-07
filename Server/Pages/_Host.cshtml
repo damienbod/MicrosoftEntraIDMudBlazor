@@ -2,6 +2,7 @@
 @namespace MicrosoftEntraIdMudBlazor.Pages
 @using MicrosoftEntraIdMudBlazor.Client
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, NetEscapades.AspNetCore.SecurityHeaders.TagHelpers
 @{
     Layout = null;
 }
@@ -13,12 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Blazor ME ID Cookie</title>
     <base href="~/" />
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
-    <link href="css/app.css" rel="stylesheet" />
-    <link href="MicrosoftEntraIdMudBlazor.Client.styles.css" rel="stylesheet" />
+    <link asp-add-nonce rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link asp-add-nonce href="css/app.css" rel="stylesheet" />
+    <link asp-add-nonce href="MicrosoftEntraIdMudBlazor.Client.styles.css" rel="stylesheet" />
+    <link asp-add-nonce href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
     <link href="manifest.json" rel="manifest" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
-    <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -41,9 +42,9 @@
         <a class="dismiss">🗙</a>
     </div>
 
-    <script src="_framework/blazor.webassembly.js" ></script>
-    <script src="_content/MudBlazor/MudBlazor.min.js"></script>
-    <script src="antiForgeryToken.js" ></script>
+    <script asp-add-nonce src="_framework/blazor.webassembly.js"></script>
+    <script asp-add-nonce src="_content/MudBlazor/MudBlazor.min.js"></script>
+    <script asp-add-nonce src="antiForgeryToken.js"></script>
     @Html.AntiForgeryToken()
 </body>
 </html>
