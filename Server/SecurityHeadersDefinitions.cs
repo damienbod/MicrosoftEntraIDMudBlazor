@@ -32,7 +32,7 @@ public static class SecurityHeadersDefinitions
 
                 builder.AddScriptSrc()
                     .WithNonce()
-                    .UnsafeEval()
+                    .UnsafeEval() // due to Blazor WASM
                     .UnsafeInline();
 
                 // disable script and style CSP protection if using Blazor hot reload
