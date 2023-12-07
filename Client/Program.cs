@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
 using System.Net.Http.Headers;
+using MudBlazor.Services;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.Services.AddOptions();
@@ -13,6 +14,8 @@ builder.Services.AddAuthorizationCore();
 builder.Services.TryAddSingleton<AuthenticationStateProvider, HostAuthenticationStateProvider>();
 builder.Services.TryAddSingleton(sp => (HostAuthenticationStateProvider)sp.GetRequiredService<AuthenticationStateProvider>());
 builder.Services.AddTransient<AuthorizedHandler>();
+
+builder.Services.AddMudServices();
 
 builder.RootComponents.Add<App>("#app");
 
