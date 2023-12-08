@@ -8,19 +8,17 @@
     <MudAppBar Elevation="0">
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
         <MudSpacer />
-        <MudIconButton Icon="@Icons.Custom.Brands.MudBlazor" Color="Color.Inherit" Link="https://mudblazor.com/" Target="_blank" />
-        <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Color="Color.Inherit" Link="https://github.com/MudBlazor/MudBlazor/" Target="_blank" />
-        
+
         <AuthorizeView>
             <Authorized>
-                <strong>Hi @context?.User?.Identity?.Name</strong>
+                <strong>@context?.User?.Identity?.Name</strong>
                 <form method="post" action="api/Account/Logout">
                     <AntiForgeryTokenInput />
-                    <button class="btn btn-link" type="submit">Sign out</button>
+                    <button class="btn btn-link whiteColor" type="submit">Sign out</button>
                 </form>
             </Authorized>
             <NotAuthorized>
-                <a class="whiteColor" href="api/Account/Login">Log in</a>
+                <MudIconButton Icon="@Icons.Material.Filled.Login" Color="Color.Inherit" Href="api/Account/Login" /> 
             </NotAuthorized>
         </AuthorizeView>
 
