@@ -27,7 +27,7 @@ public static class SecurityHeadersDefinitions
                 builder.AddFrameAncestors().None();
 
                 builder.AddStyleSrc()
-                    .UnsafeInline()
+                    .UnsafeInline() // due to Mudblazor
                     .Self();
 
                 builder.AddScriptSrc()
