@@ -2,6 +2,8 @@
 
 [![.NET](https://github.com/damienbod/MicrosoftEntraIDMudBlazor/actions/workflows/dotnet.yml/badge.svg)](https://github.com/damienbod/MicrosoftEntraIDMudBlazor/actions/workflows/dotnet.yml)  [![Deploy Azure Web App](https://github.com/damienbod/MicrosoftEntraIDMudBlazor/actions/workflows/azure-webapps-dotnet-core.yml/badge.svg)](https://github.com/damienbod/MicrosoftEntraIDMudBlazor/actions/workflows/azure-webapps-dotnet-core.yml)
 
+![BFF production](https://github.com/damienbod/MicrosoftEntraIDMudBlazor/blob/main/images/secure-mudblazor_01.png)
+
 ## Deployment 
 
 https://me-id-mudblazor.azurewebsites.net/directapi
