@@ -1,5 +1,5 @@
 
-name: Build and deploy ASP.Net Core app to an Azure Web App
+name: Deploy Azure Web App
 
 env:
   AZURE_WEBAPP_NAME: me-id-mudblazor      # set this to the name of your Azure Web App
