@@ -37,6 +37,13 @@ services.AddMicrosoftIdentityWebAppAuthentication(configuration)
     .AddMicrosoftGraph("https://graph.microsoft.com/v1.0", initialScopes)
     .AddInMemoryTokenCaches();
 
+// If using downstream APIs and in memory cache, you need to reset the cookie session if the cache is missing
+// If you use persistent cache, you do not require this.
+// You can also return the 403 with the required scopes, this needs special handling for ajax calls
+// The check is only for single scopes
+services.Configure<CookieAuthenticationOptions>(CookieAuthenticationDefaults.AuthenticationScheme,
+    options => options.Events = new RejectSessionCookieWhenAccountNotInCacheEvents(initialScopes));
+
 services.AddControllersWithViews(options =>
     options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()));
 
