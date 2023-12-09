@@ -8,6 +8,8 @@ namespace MicrosoftEntraIdMudBlazor.Server.Controllers;
 [Route("api/[controller]")]
 public class AccountController : ControllerBase
 {
+    private static readonly char[] trimChars = ['"'];
+
     [HttpGet("Login")]
     public ActionResult Login(string? returnUrl, string? claimsChallenge)
     {
@@ -20,7 +22,7 @@ public class AccountController : ControllerBase
         if(claimsChallenge != null)
         {
             string jsonString = claimsChallenge.Replace("\\", "")
-                .Trim(new char[1] { '"' });
+                .Trim(trimChars);
 
             properties.Items["claims"] = jsonString;
         }

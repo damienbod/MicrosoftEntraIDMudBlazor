@@ -11,7 +11,7 @@ public class UserController : ControllerBase
     [AllowAnonymous]
     public IActionResult GetCurrentUser() => Ok(CreateUserInfo(User));
 
-    private UserInfo CreateUserInfo(ClaimsPrincipal claimsPrincipal)
+    private static UserInfo CreateUserInfo(ClaimsPrincipal claimsPrincipal)
     {
         if (!claimsPrincipal?.Identity?.IsAuthenticated ?? true)
         {
