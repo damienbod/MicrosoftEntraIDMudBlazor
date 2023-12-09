@@ -1,9 +1,4 @@
-﻿using Microsoft.Graph;
-using Microsoft.Graph.Models;
-using Microsoft.Identity.Web;
-using Microsoft.IdentityModel.Tokens;
-
-namespace MicrosoftEntraIdMudBlazor.Server.Services;
+﻿namespace MicrosoftEntraIdMudBlazor.Server.Services;
 
 public class MsGraphService
 {

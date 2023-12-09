@@ -1,5 +1,3 @@
-using Microsoft.Net.Http.Headers;
-
 namespace MicrosoftEntraIdMudBlazor.Server.Services;
 
 public static class ApplicationBuilderExtensions

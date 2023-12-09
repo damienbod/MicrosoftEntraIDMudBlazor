@@ -1,10 +1,5 @@
 ﻿using MicrosoftEntraIdMudBlazor.Shared.Authorization;
 
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-
-using System.Security.Claims;
-
 namespace BlazorBffOpenIDConnect.Server.Controllers;
 
 // orig src https://github.com/berhir/BlazorWebAssemblyCookieAuth

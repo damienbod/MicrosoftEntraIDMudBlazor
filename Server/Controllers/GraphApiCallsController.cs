@@ -1,10 +1,4 @@
-﻿using MicrosoftEntraIdMudBlazor.Server.Services;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Identity.Web;
-
-namespace MicrosoftEntraIdMudBlazor.Server.Controllers;
+﻿namespace MicrosoftEntraIdMudBlazor.Server.Controllers;
 
 [ValidateAntiForgeryToken]
 [Authorize(AuthenticationSchemes = CookieAuthenticationDefaults.AuthenticationScheme)]
