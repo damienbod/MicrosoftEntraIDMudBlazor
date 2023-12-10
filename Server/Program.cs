@@ -1,10 +1,4 @@
-﻿using MicrosoftEntraIdMudBlazor.Server;
-using MicrosoftEntraIdMudBlazor.Server.Services;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Identity.Web;
-using Microsoft.Identity.Web.UI;
-
-var builder = WebApplication.CreateBuilder(args);
+﻿var builder = WebApplication.CreateBuilder(args);
 
 builder.WebHost.ConfigureKestrel(serverOptions =>
 {

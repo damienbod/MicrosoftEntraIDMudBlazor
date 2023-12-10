@@ -1,8 +1,4 @@
-﻿using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.OpenIdConnect;
-using Microsoft.AspNetCore.Authorization;
-namespace MicrosoftEntraIdMudBlazor.Server.Controllers;
+﻿namespace MicrosoftEntraIdMudBlazor.Server.Controllers;
 
 // orig src https://github.com/berhir/BlazorWebAssemblyCookieAuth
 [Route("api/[controller]")]
