@@ -21,3 +21,4 @@ https://github.com/damienbod/Blazor.BFF.AzureAD.Template
 https://learn.microsoft.com/en-us/aspnet/core/blazor
 
 https://learn.microsoft.com/en-us/aspnet/core/security
+
