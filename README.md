@@ -6,7 +6,6 @@
 
 ![BFF production](https://github.com/damienbod/MicrosoftEntraIDMudBlazor/blob/main/images/secure-mudblazor_01.png)
 
-
 ## Deployment 
 
 https://me-id-mudblazor.azurewebsites.net/directapi
