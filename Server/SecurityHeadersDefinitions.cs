@@ -28,7 +28,7 @@ public static class SecurityHeadersDefinitions
                     .Self();
 
                 builder.AddScriptSrc()
-                   .WithHash256("sha256-wTSw2ZoYOVpX8Sl5cEiYcCF8ddvCbjJhiX+oYQqD1s4=")
+                   .WithHash256("wTSw2ZoYOVpX8Sl5cEiYcCF8ddvCbjJhiX+oYQqD1s4=")
                    .WithNonce()
                    .UnsafeEval() // due to Blazor WASM
                    .StrictDynamic()
