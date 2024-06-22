@@ -19,7 +19,7 @@ public static class SecurityHeadersDefinitions
                 builder.AddBlockAllMixedContent();
                 builder.AddImgSrc().Self().From("data:");
                 builder.AddFormAction().Self().From(idpHost);
-                builder.AddFontSrc().Self();        
+                builder.AddFontSrc().Self();
                 builder.AddBaseUri().Self();
                 builder.AddFrameAncestors().None();
 

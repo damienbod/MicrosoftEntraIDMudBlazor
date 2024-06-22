@@ -1,6 +1,6 @@
-﻿using MicrosoftEntraIdMudBlazor.Shared.Authorization;
-using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
+using MicrosoftEntraIdMudBlazor.Shared.Authorization;
 using System.Net.Http.Json;
 using System.Security.Claims;
 

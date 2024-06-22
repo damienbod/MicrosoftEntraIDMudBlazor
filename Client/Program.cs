@@ -1,12 +1,10 @@
-﻿using MicrosoftEntraIdMudBlazor.Client;
-using MicrosoftEntraIdMudBlazor.Client.Services;
-
-using Microsoft.AspNetCore.Components.Authorization;
+﻿using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-
-using System.Net.Http.Headers;
+using MicrosoftEntraIdMudBlazor.Client;
+using MicrosoftEntraIdMudBlazor.Client.Services;
 using MudBlazor.Services;
+using System.Net.Http.Headers;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.Services.AddOptions();
