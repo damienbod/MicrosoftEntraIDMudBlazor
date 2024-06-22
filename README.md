@@ -11,6 +11,10 @@
 
 https://me-id-mudblazor.azurewebsites.net/directapi
 
+## History
+
+2024-02-22 Updated packages
+
 ## Links
 
 https://mudblazor.com/
