@@ -13,7 +13,8 @@ https://me-id-mudblazor.azurewebsites.net/directapi
 
 ## History
 
-2024-02-22 Updated packages
+- 2024-08-16 Updated packages
+- 2024-02-22 Updated packages
 
 ## Links
 
